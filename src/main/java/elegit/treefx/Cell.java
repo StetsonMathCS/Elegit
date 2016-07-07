@@ -452,6 +452,4 @@ public class Cell extends Pane{
             });
         }
     }
-
-    //testing
 }
