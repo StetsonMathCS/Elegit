@@ -231,7 +231,6 @@ public class SessionController {
         // Set minimum sizes for other fields and views
         workingTreePanelView.setMinSize(Control.USE_PREF_SIZE, 200);
         allFilesPanelView.setMinSize(Control.USE_PREF_SIZE, 200);
-        commitMessageField.setMinSize(Control.USE_PREF_SIZE, Control.USE_PREF_SIZE);
         tagNameField.setMinSize(Control.USE_PREF_SIZE, Control.USE_PREF_SIZE);
         branchDropdownSelector.setMinSize(Control.USE_PREF_SIZE, Control.USE_PREF_SIZE);
         final int REPO_DROPDOWN_MAX_WIDTH = 147;
@@ -1209,7 +1208,6 @@ public class SessionController {
             selectAllButton.setDisable(disable);
             deselectAllButton.setDisable(disable);
             remoteImage.setVisible(!disable);
-            commitMessageField.setDisable(disable);
             browserText.setVisible(!disable);
             branchesButton.setDisable(disable);
             workingTreePanelTab.setDisable(disable);

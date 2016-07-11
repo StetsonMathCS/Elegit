@@ -42,6 +42,8 @@ public class MenuPopulator {
                         null));
         menuEdit.getItems().add(openGitIgnoreItem);
 
+        Menu newRepoMenu = new Menu("Load repository");
+
         menuBar.getMenus().addAll(menuFile, menuEdit);
         return menuBar;
     }

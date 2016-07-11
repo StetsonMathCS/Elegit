@@ -164,50 +164,42 @@
                                     onAction="#onDeselectAllButton"/>
                         </HBox>
 
-                        <TextArea
-                                GridPane.rowIndex="3"
-                                fx:id="commitMessageField"
-                                prefRowCount="4"
-                                prefColumnCount="1"
-                                promptText="Commit message..."
-                                wrapText="true" />
-
                     </GridPane>
 
-                    <StackPane GridPane.rowIndex="1"
-                               GridPane.columnIndex="7">
-                        <padding>
-                            <Insets bottom="40"/>
-                        </padding>
-                        <Text text="Remote"
-                              StackPane.alignment="BOTTOM_CENTER">
-                            <font>
-                                <Font size="26"/>
-                            </font>
-                        </Text>
-                    </StackPane>
+                    <VBox   GridPane.columnIndex="7"
+                            GridPane.rowIndex="1"
+                            spacing="5">
+                        <StackPane>
+                            <Text text="Remote Repository"
+                                  StackPane.alignment="TOP_CENTER">
+                                <font>
+                                    <Font size="20"/>
+                                </font>
+                            </Text>
+                        </StackPane>
 
-                    <StackPane GridPane.rowIndex="1"
-                               GridPane.columnIndex="7"
-                               onMouseClicked="#handleRemoteMouseClick">
-                        <ImageView
-                                fx:id = "remoteImage"
-                                fitHeight="175"
-                                fitWidth="175"
-                                preserveRatio="true"
-                                onMouseClicked="#handleRemoteMouseClick">
-                            <image>
-                                <Image url="@cloud.png"/>
-                            </image>
-                        </ImageView>
+                        <StackPane onMouseClicked="#handleRemoteMouseClick">
+                            <ImageView
+                                    fx:id = "remoteImage"
+                                    fitHeight="175"
+                                    fitWidth="175"
+                                    preserveRatio="true"
+                                    onMouseClicked="#handleRemoteMouseClick">
+                                <image>
+                                    <Image url="@cloud.png"/>
+                                </image>
+                            </ImageView>
 
-                        <Text fx:id="browserText"
-                              onMouseClicked="#handleRemoteMouseClick">
-                            <font>
-                                <Font size="12" name="Sans Serif"/>
-                            </font>
-                        </Text>
-                    </StackPane>
+                            <Text fx:id="browserText"
+                                  onMouseClicked="#handleRemoteMouseClick">
+                                <font>
+                                    <Font size="12" name="Sans Serif"/>
+                                </font>
+                            </Text>
+                        </StackPane>
+                    </VBox>
+
+
 
                     <StackPane GridPane.rowIndex="1"
                                 GridPane.columnIndex="6">
