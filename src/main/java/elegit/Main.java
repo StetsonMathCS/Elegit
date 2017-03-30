@@ -23,6 +23,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
+import stetsonuniversity.mathcs.PlanWrapper;
+
 /**
  * The starting point for this JavaFX application.
  */
@@ -38,6 +40,9 @@ public class Main extends Application {
     public static SessionController sessionController;
 
     public static void main(String[] args) {
+
+        PlanWrapper.testPlanner("/Users/JoshuaEckroth/Documents/git/gitplanner/GitPlanner/gitplanner/src/main/resources/gitplanner.pl");
+
         // If this gets fancier, we should write a more robust command-line parser or use a library.
         // At the moment, there's only one possible option.
         if (args.length == 0) {
